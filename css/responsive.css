@@ -1,0 +1,81 @@
+/* ================================
+   RESPONSIVIDADE
+   Breakpoints:
+   - Tablet:  até 768px
+   - Mobile:  até 480px
+================================ */
+
+/* ---- TABLET (até 768px) ---- */
+@media (max-width: 768px) {
+
+  /* Menu hamburguer aparece */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Menu links ficam em coluna e escondidos */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #1a1a2e;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    z-index: 999;
+  }
+
+  /* Quando o JS adicionar a classe .aberto */
+  .nav-links.aberto {
+    display: flex;
+  }
+
+  /* Hero menor */
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .subtitulo {
+    font-size: 1rem;
+  }
+
+  /* Cards em coluna */
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+/* ---- MOBILE (até 480px) ---- */
+@media (max-width: 480px) {
+
+  .navbar {
+    padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .btn-principal {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.95rem;
+  }
+
+  .titulo-secao {
+    font-size: 1.5rem;
+  }
+
+  .foto-perfil {
+    width: 120px;
+    height: 120px;
+  }
+}

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!-- ✅ SEO Básico -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal desenvolvido em HTML, CSS e JavaScript.">
+  <meta name="keywords" content="Portfólio, HTML, CSS, JavaScript, Desenvolvedor">
+  <meta name="author" content="Miguel Virgínio">
+
+  <title>Miguel Virgínio | Portfólio</title>
+
+  <!-- ✅ CSS externo -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- ============================
+       HEADER / MENU DE NAVEGAÇÃO
+  ============================= -->
+  <header class="header">
+    <nav class="navbar">
+
+      <!-- Logo / Nome -->
+      <div class="logo">
+        <a href="index.html">Miguel Virgínio</a>
+      </div>
+
+      <!-- Botão hamburguer (mobile) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+        &#9776;
+      </button>
+
+      <!-- Links de navegação -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+
+    </nav>
+  </header>
+
+  <!-- ============================
+       MAIN — CONTEÚDO PRINCIPAL
+  ============================= -->
+  <main>
+
+    <!-- ✅ SEÇÃO HERO / BANNER -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+
+        <!-- Foto de perfil -->
+        <img
+          src="/img/"
+          alt="Foto de Miguel Virgínio"
+          class="foto-perfil"
+        >
+
+        <!-- Apresentação -->
+        <h1>Olá, eu sou <span class="destaque">Miguel Virgínio</span></h1>
+        <p class="subtitulo">Estudante de Engenharia de Software apaixonado por tecnologia</p>
+
+        <!-- Botão CTA -->
+        <a href="projetos.html" class="btn-principal">
+          Conheça meus projetos
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ✅ SEÇÃO PRÉVIA DE PROJETOS -->
+    <section class="projetos-preview" id="projetos">
+      <h2 class="titulo-secao">Meus Projetos</h2>
+
+      <div class="cards-container">
+
+        <!-- Card 1 -->
+        <article class="card">
+          <h3>Sistema de Estoque</h3>
+          <p>Sistema para controle de produtos com HTML, CSS e JavaScript.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <a href="projetos.html" class="btn-card">Ver Projeto</a>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <h3>Loja Virtual</h3>
+          <p>Interface de loja online responsiva com carrinho de compras.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <a href="projetos.html" class="btn-card">Ver Projeto</a>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <h3>Agenda Digital</h3>
+          <p>Agenda com cadastro de compromissos e lembretes automáticos.</p>
+          <div class="tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <a href="projetos.html" class="btn-card">Ver Projeto</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================
+       FOOTER / RODAPÉ
+  ============================= -->
+  <footer class="footer">
+    <p>&copy; 2026 Miguel Virgínio. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- ✅ Botão voltar ao topo -->
+  <button class="btn-topo" id="btnTopo" title="Voltar ao topo">&#8679;</button>
+
+  <!-- ✅ JavaScript -->
+  <script src="js/script.js"></script>
+
+</body>
+</html>

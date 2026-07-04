@@ -1,0 +1,656 @@
+/* ================================
+   RESET E BASE
+================================ */
+
+/* Remove espaçamentos padrão do navegador */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonte e cor padrão */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f0f1a;
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Links sem sublinhado */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Lista sem marcadores */
+ul {
+  list-style: none;
+}
+
+/* ================================
+   HEADER / NAVBAR
+================================ */
+
+.header {
+  background-color: #1a1a2e;
+  position: sticky;       /* Fica fixo no topo ao rolar */
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7b2fff;
+  letter-spacing: 1px;
+}
+
+/* Links do menu */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: #e0e0e0;
+  font-size: 1rem;
+  transition: color 0.3s;
+  padding: 0.3rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+/* Hover e link ativo */
+.nav-links a:hover,
+.nav-links a.active {
+  color: #7b2fff;
+  border-bottom: 2px solid #7b2fff;
+}
+
+/* Botão hamburguer — escondido no desktop */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: #e0e0e0;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* ================================
+   HERO / BANNER
+================================ */
+
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #0f0f1a 60%, #1a1a2e 100%);
+}
+
+.hero-content {
+  max-width: 700px;
+}
+
+/* Foto de perfil */
+.foto-perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;           /* Foto redonda */
+  border: 4px solid #7b2fff;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 0 20px rgba(123, 47, 255, 0.5);
+}
+
+/* Título principal */
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* Palavra em destaque (nome) */
+.destaque {
+  color: #7b2fff;
+}
+
+/* Subtítulo */
+.subtitulo {
+  font-size: 1.2rem;
+  color: #aaaaaa;
+  margin-bottom: 2rem;
+}
+
+/* Botão principal */
+.btn-principal {
+  display: inline-block;
+  background-color: #7b2fff;
+  color: #ffffff;
+  padding: 0.9rem 2rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 15px rgba(123, 47, 255, 0.4);
+}
+
+.btn-principal:hover {
+  background-color: #5a1fcc;
+  transform: translateY(-3px);  /* Sobe levemente no hover */
+}
+
+/* ================================
+   SEÇÃO DE PROJETOS (PRÉVIA)
+================================ */
+
+.projetos-preview {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Título de seção */
+.titulo-secao {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+/* Linha decorativa abaixo do título */
+.titulo-secao::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #7b2fff;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Container dos cards */
+.cards-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card individual */
+.card {
+  background-color: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card:hover {
+  transform: translateY(-8px);  /* Sobe o card no hover */
+  box-shadow: 0 8px 30px rgba(123, 47, 255, 0.3);
+}
+
+.card h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.card p {
+  color: #aaaaaa;
+  font-size: 0.95rem;
+}
+
+/* Tags de tecnologia */
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #7b2fff22;
+  color: #7b2fff;
+  border: 1px solid #7b2fff55;
+  border-radius: 20px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.8rem;
+}
+
+/* Botão do card */
+.btn-card {
+  display: inline-block;
+  background-color: transparent;
+  color: #7b2fff;
+  border: 2px solid #7b2fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: auto;
+}
+
+.btn-card:hover {
+  background-color: #7b2fff;
+  color: #ffffff;
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+.footer {
+  background-color: #1a1a2e;
+  text-align: center;
+  padding: 2rem;
+  color: #666;
+  font-size: 0.9rem;
+  border-top: 1px solid #2a2a4a;
+}
+
+/* ================================
+   BOTÃO VOLTAR AO TOPO
+================================ */
+
+.btn-topo {
+  position: fixed;        /* Fixo na tela */
+  bottom: 2rem;
+  right: 2rem;
+  background-color: #7b2fff;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;          /* Escondido por padrão */
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(123, 47, 255, 0.5);
+  transition: background-color 0.3s, transform 0.2s;
+  z-index: 999;
+}
+
+.btn-topo:hover {
+  background-color: #5a1fcc;
+  transform: translateY(-3px);
+}
+
+/* Quando o JS adicionar a classe .visivel */
+.btn-topo.visivel {
+  display: flex;
+}
+
+
+/* ================================
+   PÁGINA SOBRE
+================================ */
+
+.sobre {
+  padding: 5rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.sobre-container {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.sobre-texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sobre-bloco {
+  background-color: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sobre-bloco h3 {
+  color: #7b2fff;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.sobre-bloco p {
+  color: #cccccc;
+  margin-bottom: 0.8rem;
+}
+
+.lista-formacao {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-formacao li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #2a2a4a;
+  color: #cccccc;
+}
+
+.lista-formacao li:last-child {
+  border-bottom: none;
+}
+
+.lista-formacao strong {
+  color: #ffffff;
+}
+
+/* Barras de habilidade */
+.habilidades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.habilidade-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.habilidade-nome {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.barra {
+  height: 8px;
+  background-color: #0f0f1a;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.nivel {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 1s ease-out;
+}
+
+/* Cores das barras */
+.html { width: 95%; background: #e34f26; }
+.css  { width: 90%; background: #1572b6; }
+.js   { width: 80%; background: #f7df1e; }
+.git  { width: 85%; background: #f05032; }
+.resp { width: 90%; background: #7b2fff; }
+.a11y { width: 75%; background: #00bfff; }
+
+.sobre-foto {
+  flex: 0 0 280px;
+  text-align: center;
+}
+
+.foto-perfil-grande {
+  width: 280px;
+  height: 280px;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 4px solid #7b2fff;
+  box-shadow: 0 0 30px rgba(123, 47, 255, 0.4);
+}
+
+/* ================================
+   PÁGINA PROJETOS (CARDS ESTENDIDOS)
+================================ */
+
+.projetos-completo {
+  padding: 5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  /* Sobrescreve o card simples da home */
+  flex-direction: column;
+  height: 100%;
+}
+
+.card-img {
+  width: 100%;
+  height: 180px;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  margin: -1px -1px 1rem -1px; /* Compensa padding do card */
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.card:hover .card-img img {
+  transform: scale(1.05);
+}
+
+.card-conteudo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+}
+
+.card-botoes {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: auto;
+}
+
+.btn-demo {
+  background-color: transparent;
+  border: 2px solid #7b2fff;
+  color: #7b2fff;
+}
+
+.btn-demo:hover {
+  background-color: #7b2fff;
+  color: #ffffff;
+}
+
+/* ================================
+   PÁGINA CONTATO
+================================ */
+
+.contato {
+  padding: 5rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.contato-container {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.contato-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contato-info h3 {
+  color: #7b2fff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contato-info p {
+  color: #aaaaaa;
+  margin-bottom: 2rem;
+}
+
+.contato-itens {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contato-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  color: #cccccc;
+}
+
+.icone {
+  font-size: 1.5rem;
+  color: #7b2fff;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.contato-item a {
+  color: #7b2fff;
+  transition: color 0.3s;
+}
+
+.contato-item a:hover {
+  color: #ffffff;
+}
+
+/* Formulário */
+.formulario {
+  flex: 1;
+  min-width: 300px;
+  background-color: #1a1a2e;
+  border: 1px solid #2a2a4a;
+  border-radius: 12px;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-grupo label {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.obrigatorio {
+  color: #ff6b6b;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+  background-color: #0f0f1a;
+  border: 2px solid #2a2a4a;
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-grupo input:focus,
+.form-grupo textarea:focus {
+  outline: none;
+  border-color: #7b2fff;
+  box-shadow: 0 0 0 3px rgba(123, 47, 255, 0.2);
+}
+
+.form-grupo input.erro,
+.form-grupo textarea.erro {
+  border-color: #ff6b6b;
+}
+
+.erro-msg {
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  min-height: 1.2em; /* Evita salto de layout */
+  display: block;
+}
+
+.btn-enviar {
+  background-color: #7b2fff;
+  color: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: 0.5rem;
+}
+
+.btn-enviar:hover {
+  background-color: #5a1fcc;
+  transform: translateY(-2px);
+}
+
+/* Mensagem de sucesso */
+.sucesso-msg {
+  background-color: #1a5c2e;
+  border: 1px solid #2ecc71;
+  color: #2ecc71;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  display: none; /* JS controla */
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================
+   ANIMAÇÕES SCROLL REVEAL
+================================ */
+
+/* Estado inicial: invisível e deslocado para baixo */
+.oculto-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+/* Estado final: visível e na posição correta */
+.visivel-scroll {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Delay escalonado nos cards (efeito cascata) */
+.cards-container .card:nth-child(1) { transition-delay: 0.1s; }
+.cards-container .card:nth-child(2) { transition-delay: 0.2s; }
+.cards-container .card:nth-child(3) { transition-delay: 0.3s; }

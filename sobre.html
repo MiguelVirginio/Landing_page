@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sobre mim - João Silva, Desenvolvedor Front-End.">
+  <meta name="keywords" content="Sobre, Desenvolvedor, Front-End, HTML, CSS, JavaScript">
+  <meta name="author" content="Miguel Virgínio">
+  <title>Sobre Mim | Miguel Virgínio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- HEADER (igual ao index) -->
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">Miguel Virgínio</a></div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html" class="active">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- SEÇÃO SOBRE -->
+    <section class="sobre" id="sobre">
+      <div class="sobre-container">
+
+        <!-- Texto -->
+        <div class="sobre-texto">
+          <h2 class="titulo-secao">Sobre Mim</h2>
+
+          <article class="sobre-bloco">
+            <h3>Minha História</h3>
+            <p>
+              Olá! Sou <strong>Miguel Virgínio</strong>, estudante de Engenharia de Software apaixonado por criar interfaces bonitas,
+              funcionais e acessíveis. Minha jornada na programação começou em 2020, quando decidi migrar de área
+              e mergulhar de cabeça no mundo do desenvolvimento web.
+            </p>
+            <p>
+              Desde então, venho construindo projetos com <strong>HTML5, CSS3 e JavaScript puro</strong>,
+              sempre focando em código limpo, semântico e responsivo. Acredito que a web deve ser inclusiva
+              e performática para todos os usuários.
+            </p>
+          </article>
+
+          <article class="sobre-bloco">
+            <h3>Formação</h3>
+            <ul class="lista-formacao">
+              <li><strong>Montage e Manutenção de Computadores</strong> - FATEC (2024)</li>
+              <li><strong>Graduação em Engenharia de Software</strong> - UNICESUMAR (Cursando)</li>
+              <li><strong>Cursos complementares:</strong> Java, C++, Git/GitHub, Acessibilidade Web</li>
+            </ul>
+          </article>
+
+          <article class="sobre-bloco">
+            <h3>Habilidades</h3>
+            <div class="habilidades-grid">
+              <div class="habilidade-item">
+                <span class="habilidade-nome">HTML5</span>
+                <div class="barra"><div class="nivel html"></div></div>
+              </div>
+              <div class="habilidade-item">
+                <span class="habilidade-nome">CSS3</span>
+                <div class="barra"><div class="nivel css"></div></div>
+              </div>
+              <div class="habilidade-item">
+                <span class="habilidade-nome">Java</span>
+                <div class="barra"><div class="nivel js"></div></div>
+              </div>
+              <div class="habilidade-item">
+                <span class="habilidade-nome">Git / GitHub</span>
+                <div class="barra"><div class="nivel git"></div></div>
+              </div>
+              <div class="habilidade-item">
+                <span class="habilidade-nome">Responsividade</span>
+                <div class="barra"><div class="nivel resp"></div></div>
+              </div>
+              <div class="habilidade-item">
+                <span class="habilidade-nome">Acessibilidade</span>
+                <div class="barra"><div class="nivel a11y"></div></div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Miguel Virgínio. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- BOTÃO TOPO -->
+  <button class="btn-topo" id="btnTopo" title="Voltar ao topo">&#8679;</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

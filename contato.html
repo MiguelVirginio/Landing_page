@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Entre em contato - Miguel Virgínio, Desenvolvedor Front-End.">
+  <meta name="keywords" content="Contato, Email, Formulário, Desenvolvedor">
+  <meta name="author" content="Miguel Virgínio">
+  <title>Contato | Miguel Virgínio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <nav class="navbar">
+      <div class="logo"><a href="index.html">Miguel Virgínio</a></div>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="contato.html" class="active">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="contato" id="contato">
+      <h2 class="titulo-secao">Entre em Contato</h2>
+
+      <div class="contato-container">
+
+        <!-- Info de contato -->
+        <div class="contato-info">
+          <h3>Vamos conversar?</h3>
+          <p>Estou sempre aberto a novas oportunidades, colaborações ou apenas para trocar uma ideia sobre tecnologia.</p>
+
+          <div class="contato-itens">
+            <div class="contato-item">
+              <span class="icone">&#128231;</span>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:contact.miguelvirginio@gmail.com">contact.miguelvirginio@gmail.com</a>
+              </div>
+            </div>
+            <div class="contato-item">
+              <span class="icone">&#128279;</span>
+              <div>
+                <strong>LinkedIn</strong>
+                <a href="https://linkedin.com/in/miguel-virginio" target="_blank">miguelvirginio</a>
+              </div>
+            </div>
+            <div class="contato-item">
+              <span class="icone">&#128196;</span>
+              <div>
+                <strong>GitHub</strong>
+                <a href="https://github.com/MiguelVirginio" target="_blank">github.com/miguelvirginio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulário -->
+        <form class="formulario" id="formContato" novalidate>
+          <div class="form-grupo">
+            <label for="nome">Nome <span class="obrigatorio">*</span></label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+            <span class="erro-msg" id="erroNome"></span>
+          </div>
+
+          <div class="form-grupo">
+            <label for="email">Email <span class="obrigatorio">*</span></label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            <span class="erro-msg" id="erroEmail"></span>
+          </div>
+
+          <div class="form-grupo">
+            <label for="mensagem">Mensagem <span class="obrigatorio">*</span></label>
+            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
+            <span class="erro-msg" id="erroMensagem"></span>
+          </div>
+
+          <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+
+          <!-- Mensagem de sucesso (escondida pelo CSS) -->
+          <div class="sucesso-msg" id="msgSucesso">
+            &#10004; Mensagem enviada com sucesso!
+          </div>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Miguel Virgínio. Todos os direitos reservados.</p>
+  </footer>
+
+  <button class="btn-topo" id="btnTopo" title="Voltar ao topo">&#8679;</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
