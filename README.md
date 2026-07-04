@@ -3,7 +3,7 @@
 Site portfólio desenvolvido com HTML5, CSS3 e JavaScript puro.
 
 ## 📁 Estrutura
-
+```
 portfolio/
 ├── index.html
 ├── sobre.html
@@ -15,6 +15,7 @@ portfolio/
 ├── js/
 │   └── script.js
 └── img/
+```
 
 ## ✅ Funcionalidades
 
