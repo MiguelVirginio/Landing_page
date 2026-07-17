@@ -399,10 +399,14 @@ ul {
 .html { width: 55%; background: #e34f26; }
 .css  { width: 40%; background: #1572b6; }
 .java   { width: 140px; background: #9e0e0e; }
-.git  { width: 85px; background: #5c5150; }
+.git  { width: 85px; background: #3F2E00; }
 .resp { width: 120px; background: #7b2fff; }
-.cpp { width: 110px; background: #00bfff; }
-.spring { width: 9px; background: #6db33f; }
+.cpp { width: 110px; background: #00427E;}
+.spring { width: 9px; background: #6AAD3D; }
+.mongodb { width: 10px; background: #138C4D; }
+.mysql { width: px;  background: linear-gradient(90deg,rgba(29, 74, 101, 1) 36%, rgba(220, 113, 43, 1) 62%); }
+.postgres { width: 15px; background: #31648C; }
+.tailwind { width: 10px; background: #07B0CE; }
 
 
 
