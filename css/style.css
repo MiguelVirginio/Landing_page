@@ -396,26 +396,15 @@ ul {
 }
 
 /* Cores das barras */
-.html { width: 95%; background: #e34f26; }
-.css  { width: 90%; background: #1572b6; }
-.js   { width: 80%; background: #9e0e0e; }
-.git  { width: 85%; background: #5c5150; }
-.resp { width: 90%; background: #7b2fff; }
-.a11y { width: 75%; background: #00bfff; }
+.html { width: 55%; background: #e34f26; }
+.css  { width: 40%; background: #1572b6; }
+.java   { width: 140px; background: #9e0e0e; }
+.git  { width: 85px; background: #5c5150; }
+.resp { width: 120px; background: #7b2fff; }
+.cpp { width: 110px; background: #00bfff; }
+.spring { width: 9px; background: #6db33f; }
 
-.sobre-foto {
-  flex: 0 0 280px;
-  text-align: center;
-}
 
-.foto-perfil-grande {
-  width: 280px;
-  height: 280px;
-  border-radius: 16px;
-  object-fit: cover;
-  border: 4px solid #7b2fff;
-  box-shadow: 0 0 30px rgba(123, 47, 255, 0.4);
-}
 
 /* ================================
    PÁGINA PROJETOS (CARDS ESTENDIDOS)
