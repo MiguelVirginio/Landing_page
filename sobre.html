@@ -1,148 +1,281 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Sobre mim - João Silva, Desenvolvedor Front-End."
+    />
+    <meta
+      name="keywords"
+      content="Sobre, Desenvolvedor, Front-End, HTML, CSS, JavaScript"
+    />
+    <meta name="author" content="Miguel Virgínio" />
+    <title>Sobre Mim | Miguel Virgínio</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sobre mim - João Silva, Desenvolvedor Front-End.">
-  <meta name="keywords" content="Sobre, Desenvolvedor, Front-End, HTML, CSS, JavaScript">
-  <meta name="author" content="Miguel Virgínio">
-  <title>Sobre Mim | Miguel Virgínio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
-</head>
+  <body>
+    <!-- HEADER (igual ao index) -->
+    <header class="header">
+      <nav class="navbar">
+        <div class="logo"><a href="index.html">Miguel Virgínio</a></div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+          &#9776;
+        </button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html" class="active">Sobre</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
+    <main>
+      <!-- SEÇÃO SOBRE -->
+      <section class="sobre" id="sobre">
+        <div class="sobre-container">
+          <!-- Texto -->
+          <div class="sobre-texto">
+            <h2 class="titulo-secao">Sobre Mim</h2>
 
-  <!-- HEADER (igual ao index) -->
-  <header class="header">
-    <nav class="navbar">
-      <div class="logo"><a href="index.html">Miguel Virgínio</a></div>
-      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">&#9776;</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="sobre.html" class="active">Sobre</a></li>
-        <li><a href="projetos.html">Projetos</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+            <article class="sobre-bloco">
+              <h3>Minha História</h3>
+              <p>
+                Olá! Sou <strong>Miguel Virgínio</strong>, estudante de
+                Engenharia de Software apaixonado por criar interfaces bonitas,
+                funcionais e acessíveis. Minha jornada na programação começou em
+                2020, quando decidi migrar de área e mergulhar de cabeça no
+                mundo do desenvolvimento web.
+              </p>
+              <p>
+                Desde então, venho construindo projetos com
+                <strong>HTML5, CSS3 e JavaScript puro</strong>, sempre focando
+                em código limpo, semântico e responsivo. Acredito que a web deve
+                ser inclusiva e performática para todos os usuários.
+              </p>
+            </article>
 
-  <main>
+            <article class="sobre-bloco">
+              <h3>Formação</h3>
+              <ul class="lista-formacao">
+                <li>
+                  <strong>Montagem e Manutenção de Computadores</strong> - FATEC
+                  (2024)
+                </li>
+                <li>
+                  <strong>Curso NDG Linux </strong> - Cisco Networking Academy
+                  (2024)
+                </li>
+                <li>
+                  <strong>Graduação em Engenharia de Software</strong> -
+                  UNICESUMAR (Cursando)
+                </li>
+                <li>
+                  <strong>Cursos complementares:</strong> Java, C++, Git/GitHub,
+                  Acessibilidade Web
+                </li>
+              </ul>
+            </article>
+<H1>Original</H1>
+            <!--Bloco Original-->
+            <article class="sobre-bloco">
+              <h3>Stacks</h3>
+              <div class="habilidades-grid">
+                <!--Adcionei Front-End HTML5, CSS3 e Tailwind CSS -->
+                <div class="habilidade-item">
+                  <span class="habilidade-nome">HTML5</span>
+                  <div class="barra"><div class="nivel html"></div></div>
+                </div>
+                <div class="habilidade-item">
+                  <span class="habilidade-nome">CSS3</span>
+                  <div class="barra"><div class="nivel css"></div></div>
+                </div>
 
-    <!-- SEÇÃO SOBRE -->
-    <section class="sobre" id="sobre">
-      <div class="sobre-container">
+                <div class="habilidade-item">
+                  <span class="habilidade-nome">Tailwind CSS</span>
+                  <div class="barra"><div class="nivel tailwind"></div></div>
+                </div>
+                <!-- Adicionei Back-end Java + SpringBoot  e C++  -->
+                <div class="habilidade-item">
+                  <span class="habilidade-nome">Java</span>
+                  <div class="barra"><div class="nivel java"></div></div>
+                </div>
 
-        <!-- Texto -->
-        <div class="sobre-texto">
-          <h2 class="titulo-secao">Sobre Mim</h2>
+                <div class="habilidade-item">
+                  <span class="habilidade-nome">Spring Boot</span>
+                  <div class="barra"><div class="nivel spring"></div></div>
+                </div>
 
-          <article class="sobre-bloco">
-            <h3>Minha História</h3>
-            <p>
-              Olá! Sou <strong>Miguel Virgínio</strong>, estudante de Engenharia de Software apaixonado por criar interfaces bonitas,
-              funcionais e acessíveis. Minha jornada na programação começou em 2020, quando decidi migrar de área
-              e mergulhar de cabeça no mundo do desenvolvimento web.
-            </p>
-            <p>
-              Desde então, venho construindo projetos com <strong>HTML5, CSS3 e JavaScript puro</strong>,
-              sempre focando em código limpo, semântico e responsivo. Acredito que a web deve ser inclusiva
-              e performática para todos os usuários.
-            </p>
-          </article>
+                <div class="habilidade-item">
+                  <span class="habilidade-nome">C++</span>
+                  <div class="barra"><div class="nivel cpp"></div></div>
+                </div>
 
-          <article class="sobre-bloco">
-            <h3>Formação</h3>
-            <ul class="lista-formacao">
-              <li><strong>Montagem e Manutenção de Computadores</strong> - FATEC (2024)</li>
-              <li><strong>Curso NDG Linux  </strong> -  Cisco Networking Academy (2024)</li>
-              <li><strong>Graduação em Engenharia de Software</strong> - UNICESUMAR (Cursando)</li>
-              <li><strong>Cursos complementares:</strong> Java, C++, Git/GitHub, Acessibilidade Web</li>
-            </ul>
-          </article>
+                <!-- Adicionei Banco de Dados MySQL, PostgreSQL e MongoDB -->
+                <div class="habilidade-item">
+                  <span class="habilidade-nome">MySQL</span>
+                  <div class="barra"><div class="nivel mysql"></div></div>
+                </div>
 
-          <article class="sobre-bloco">
-            <h3>Stacks</h3>
-            <div class="habilidades-grid">
-              <!--Adcionei Front-End HTML5, CSS3 e Tailwind CSS -->
-              <div class="habilidade-item">
-                <span class="habilidade-nome">HTML5</span>
-                <div class="barra"><div class="nivel html"></div></div>
+                <div class="habilidade-item">
+                  <span class="habilidade-nome">PostgreSQL</span>
+                  <div class="barra"><div class="nivel postgres"></div></div>
+                </div>
+
+                <div class="habilidade-item">
+                  <span class="habilidade-nome">MongoDB</span>
+                  <div class="barra"><div class="nivel mongodb"></div></div>
+                </div>
+
+                <!-- Adicionei Git/GitHub e Responsividade -->
+                <div class="habilidade-item">
+                  <span class="habilidade-nome">Git / GitHub</span>
+                  <div class="barra"><div class="nivel git"></div></div>
+                </div>
+
+                <div class="habilidade-item">
+                  <span class="habilidade-nome">Responsividade</span>
+                  <div class="barra"><div class="nivel resp"></div></div>
+                </div>
               </div>
-              <div class="habilidade-item">
-                <span class="habilidade-nome">CSS3</span>
-                <div class="barra"><div class="nivel css"></div></div>
-              </div>
-              
-              <div class="habilidade-item">
-                <span class="habilidade-nome">Tailwind CSS</span>
-                <div class="barra"><div class="nivel tailwind"></div></div>
-              </div>
-              <!-- Adicionei Back-end Java + SpringBoot  e C++  -->
-              <div class="habilidade-item">
-                <span class="habilidade-nome">Java</span>
-                <div class="barra"><div class="nivel java"></div></div>
-              </div>
-              
-              <div class="habilidade-item">
-                <span class="habilidade-nome">Spring Boot</span>
-                <div class="barra"><div class="nivel spring"></div></div>
-              </div>
-              
-              <div class="habilidade-item">
-                <span class="habilidade-nome">C++</span>
-                <div class="barra"><div class="nivel cpp"></div></div>
-              </div>
-              
-              <!-- Adicionei Banco de Dados MySQL, PostgreSQL e MongoDB -->
-              <div class="habilidade-item">
-                <span class="habilidade-nome">MySQL</span>
-                <div class="barra"><div class="nivel mysql"></div></div>
-              </div>
+            </article>
 
-              <div class="habilidade-item">
-                <span class="habilidade-nome">PostgreSQL</span>
-                <div class="barra"><div class="nivel postgres"></div></div>
-              </div>
-             
-              <div class="habilidade-item">
-                <span class="habilidade-nome">MongoDB</span>
-                <div class="barra"><div class="nivel mongodb"></div></div>
-              </div>
-            
-              <!-- Adicionei Git/GitHub e Responsividade -->
-              <div class="habilidade-item">
-                <span class="habilidade-nome">Git / GitHub</span>
-                <div class="barra"><div class="nivel git"></div></div>
-              </div>
+            <!--bloco Teste-->
+<h1>Teste Stacks</h1>
+            <article class="sobre-bloco">
+              <h3>Stacks</h3>
+              <div class="habilidades-grid">
+                <!--Front End -->
+                <article class="sobre-bloco">
+                  <h3>Front-End</h3>
+                  <div class="habilidades-grid">
+                    <!--Adcionei Front-End HTML5, CSS3 e Tailwind CSS -->
+                    <div class="habilidade-item">
+                      <span class="habilidade-nome">HTML5</span>
+                      <div class="barra"><div class="nivel html"></div></div>
+                    </div>
+                    <div class="habilidade-item">
+                      <span class="habilidade-nome">CSS3</span>
+                      <div class="barra"><div class="nivel css"></div></div>
+                    </div>
 
-              <div class="habilidade-item">
-                <span class="habilidade-nome">Responsividade</span>
-                <div class="barra"><div class="nivel resp"></div></div>
+                    <div class="habilidade-item">
+                      <span class="habilidade-nome">Tailwind CSS</span>
+                      <div class="barra">
+                        <div class="nivel tailwind"></div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+
+                <!--BACK-END-->
+
+                <article class="sobre-bloco">
+                  <h3>Back-End</h3>
+                  <div class="habilidades-grid">
+                    <!--Adcionei Front-End HTML5, CSS3 e Tailwind CSS -->
+
+                    <!-- Adicionei Back-end Java + SpringBoot  e C++  -->
+                    <div class="habilidade-item">
+                      <span class="habilidade-nome">Java</span>
+                      <div class="barra"><div class="nivel java"></div></div>
+                    </div>
+
+                    <div class="habilidade-item">
+                      <span class="habilidade-nome">Spring Boot</span>
+                      <div class="barra"><div class="nivel spring"></div></div>
+                    </div>
+
+                    <div class="habilidade-item">
+                      <span class="habilidade-nome">C++</span>
+                      <div class="barra"><div class="nivel cpp"></div></div>
+                    </div>
+                  </div>
+                </article>
+
+                <!--DATABASES-->
+
+                <article class="sobre-bloco">
+                  <h3>DataBases</h3>
+                  <div class="habilidades-grid">
+                    <div class="habilidade-item">
+                      <span class="habilidade-nome">MySQL</span>
+                      <div class="barra"><div class="nivel mysql"></div></div>
+                    </div>
+
+                    <div class="habilidade-item">
+                      <span class="habilidade-nome">PostgreSQL</span>
+                      <div class="barra">
+                        <div class="nivel postgres"></div>
+                      </div>
+                    </div>
+
+                    <div class="habilidade-item">
+                      <span class="habilidade-nome">MongoDB</span>
+                      <div class="barra"><div class="nivel mongodb"></div></div>
+                    </div>
+                  </div>
+                </article>
+
+                <!--CI/CD -->
+                <article class="sobre-bloco">
+                  <h3>CI/CD</h3>
+                  <div class="habilidades-grid">
+                    <!-- Adicionei Git/GitHub e Responsividade -->
+                    <div class="habilidade-item">
+                      <span class="habilidade-nome">Git / GitHub</span>
+                      <div class="barra"><div class="nivel git"></div></div>
+                    </div>
+
+                    <div class="habilidade-item">
+                      <span class="habilidade-nome">Responsividade</span>
+                      <div class="barra"><div class="nivel resp"></div></div>
+                    </div>
+                  </div>
+                </article>
+
+                <!--Testes -->
+                <article class="sobre-bloco">
+                  <h3>Testes</h3>
+                  <div class="habilidades-grid">
+                    <!-- Adicionei Git/GitHub e Responsividade -->
+                    <div class="habilidade-item">
+                      <span class="habilidade-nome">Insominia</span>
+                      <div class="barra"><div class="nivel insominia"></div></div>
+                    </div>
+
+                    <div class="habilidade-item">
+                      <span class="habilidade-nome">Jenkins</span>
+                      <div class="barra"><div class="nivel jenkins"></div></div>
+                    </div>
+                  </div>
+                </article>
+
+
+
+
+
               </div>
-
-
-            </div>
-          </article>
-          
-
+            </article>
+          </div>
         </div>
+      </section>
+    </main>
 
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>&copy; 2026 Miguel Virgínio. Todos os direitos reservados.</p>
+    </footer>
 
-      </div>
-    </section>
+    <!-- BOTÃO TOPO -->
+    <button class="btn-topo" id="btnTopo" title="Voltar ao topo">
+      &#8679;
+    </button>
 
-  </main>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <p>&copy; 2026 Miguel Virgínio. Todos os direitos reservados.</p>
-  </footer>
-
-  <!-- BOTÃO TOPO -->
-  <button class="btn-topo" id="btnTopo" title="Voltar ao topo">&#8679;</button>
-
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
