@@ -407,6 +407,9 @@ ul {
 .mysql { width: 70px;  background: linear-gradient(90deg,rgba(29, 74, 101, 1) 36%, rgba(220, 113, 43, 1) 62%); }
 .postgres { width: 15px; background: #31648C; }
 .tailwind { width: 10px; background: #07B0CE; }
+.insominia { width: 40px; background: #5D00D2; }
+.jenkins { width: 10px; background: linear-gradient(90deg, rgb(211, 56, 51) 0%, rgb(51, 80, 97) 50%, rgb(129, 208, 196) 100%); }
+
 
 
 
