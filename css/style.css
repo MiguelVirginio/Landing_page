@@ -193,6 +193,13 @@ ul {
 }
 
 /* Card individual */
+
+article{
+    width:100%;
+    max-width:100%;
+    overflow:hidden;
+}
+
 .card {
   background-color: #1a1a2e;
   border: 1px solid #2a2a4a;
@@ -398,7 +405,7 @@ ul {
 /* Cores das barras */
 .html { width: 55%; background: #e34f26; }
 .css  { width: 40%; background: #1572b6; }
-.java   { width: 140px; background: #9e0e0e; }
+.java   { width:  60%; background: #9e0e0e; }
 .git  { width: 85px; background: #3F2E00; }
 .resp { width: 120px; background: #7b2fff; }
 .cpp { width: 110px; background: #00427E;}
