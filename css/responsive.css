@@ -48,11 +48,7 @@
     align-items: center;
   }
 
-   article{
-        width:100%;
-        min-width:0;
-        max-width:100%;
-    } 
+
   .card {
     width: 100%;
     max-width: 100%;
